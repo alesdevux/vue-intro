@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-primary;
+}
+
+#app {
+  @apply text-center font-ave mt-14;
+}
