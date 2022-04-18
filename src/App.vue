@@ -4,6 +4,7 @@
 import Counter from './components/Counter.vue'
 import InputReactive from './components/InputReactive.vue';
 import ComputedProps from './components/ComputedProps.vue';
+import Watcher from './components/Watcher.vue';
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import ComputedProps from './components/ComputedProps.vue';
   <Counter msg="Hola, empezando con Vue.js" />
   <InputReactive msg="Holis" />
   <ComputedProps />
+  <Watcher />
 </div>
 </template>
