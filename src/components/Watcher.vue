@@ -4,7 +4,8 @@
       return {
         text: 'La puerta está cerrada',
         open: false,
-        action: 'abrir'
+        action: 'abrir',
+        class: 'text-primary-dark'
       }
     },
     watch: {
@@ -17,13 +18,21 @@
           this.action = 'abril'
         }
       }
+    },
+    computed: {
+      addClass() {
+        return {
+          'text-primary-dark': !this.open,
+          'text-primary': this.open
+        }
+      }
     }
   }
 </script>
 
 <template>
   <div class="f-small">
-    <h1 class="mb-9">{{ text }}</h1>
+    <h1 :class="addClass">{{ text }}</h1>
     <button @click="open = !open" >{{ action }}</button>
   </div>
 </template>

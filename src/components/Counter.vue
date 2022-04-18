@@ -23,7 +23,7 @@
 
 <template>
 <div class="f-small">
-  <h1 class="mb-9">{{ msg }}</h1>
+  <h1>{{ msg }}</h1>
 
   <div>
     <button @click="decrement">-</button>
