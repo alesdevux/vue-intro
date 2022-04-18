@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  @apply text-4xl uppercase font-bold tracking-wide;
+}
+
 a {
   @apply text-primary;
+}
+
+button {
+  @apply text-black hover:bg-primary-dark hover:text-white font-bold py-2 px-4 rounded border-2 border-primary-dark;
 }
 
 #app {
