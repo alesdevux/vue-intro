@@ -1,20 +1,24 @@
 <script setup>
-import { ref } from 'vue'
-
-defineProps({
-  msg: String
-})
-
-const counter = ref(0)
-
-function decrement() {
-  if (counter.value > 0) {
-    counter.value--
+  defineProps({
+    msg: String
+  })
+</script>
+<script>
+  export default {
+    data: () => ({
+      counter: 0
+    }),
+    methods: {
+      decrement() {
+        if (this.counter > 0) {
+          this.counter--
+        }
+      },
+      increment() {
+        this.counter++
+      }
+    }
   }
-}
-function increment() {
-  counter.value++
-}
 </script>
 
 <template>
