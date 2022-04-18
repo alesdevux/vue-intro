@@ -11,7 +11,7 @@ a {
 }
 
 button {
-  @apply px-4 py-2 font-bold text-black border-2 rounded hover:bg-primary-dark hover:text-white border-primary-dark;
+  @apply px-4 py-2 font-bold text-black uppercase border-2 rounded hover:bg-primary-dark hover:text-white border-primary-dark;
 }
 
 input {
@@ -27,5 +27,5 @@ input {
 }
 
 .f-small {
-  @apply flex flex-col gap-2;
+  @apply flex flex-col items-center gap-2;
 }

@@ -1,21 +1,21 @@
-<script setup>
-  defineProps({
-    msg: {
-      type: String,
-      default: 'Hello, Vue.js!'
-    }
-  })
-</script>
 <script>
   export default {
     data() {
       return {
-        text: this.msg
+        text: 'La puerta está cerrada',
+        open: false,
+        action: 'abrir'
       }
     },
     watch: {
-      text(newVal, oldVal) {
-        console.log(`${oldVal} -> ${newVal}`)
+      open(value) {
+        if (value) {
+          this.text = 'La puerta está abierta',
+          this.action = 'cerral'
+        } else {
+          this.text = 'La puerta está cerrada',
+          this.action = 'abril'
+        }
       }
     }
   }
@@ -24,5 +24,6 @@
 <template>
   <div class="f-small">
     <h1 class="mb-9">{{ text }}</h1>
+    <button @click="open = !open" >{{ action }}</button>
   </div>
 </template>
