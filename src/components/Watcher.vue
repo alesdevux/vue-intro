@@ -4,8 +4,7 @@
       return {
         text: 'La puerta está cerrada',
         open: false,
-        action: 'abrir',
-        class: 'text-primary-dark'
+        action: 'abrir'
       }
     },
     watch: {
