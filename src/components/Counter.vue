@@ -20,7 +20,9 @@ function increment() {
 <template>
   <h1 class="mb-32">{{ msg }}</h1>
 
-  <button @click="decrement">-</button>
-  <span class="px-5">{{ counter }}</span>
-  <button @click="increment">+</button>
+  <div class="mb-5">
+    <button @click="decrement">-</button>
+    <span class="px-5">{{ counter }}</span>
+    <button @click="increment">+</button>
+  </div>
 </template>
