@@ -7,6 +7,8 @@ defineProps({
 </script>
 
 <template>
+<div class="f-small">
   <p>{{ msg }}</p>
   <input type="text" v-model="msg" />
+</div>
 </template>

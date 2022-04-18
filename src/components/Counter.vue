@@ -18,11 +18,13 @@ function increment() {
 </script>
 
 <template>
-  <h1 class="mb-32">{{ msg }}</h1>
+<div class="f-small">
+  <h1 class="mb-9">{{ msg }}</h1>
 
-  <div class="mb-5">
+  <div>
     <button @click="decrement">-</button>
     <span class="px-5">{{ counter }}</span>
     <button @click="increment">+</button>
   </div>
+</div>
 </template>

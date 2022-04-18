@@ -15,9 +15,17 @@ button {
 }
 
 input {
-  @apply px-3 py-2 text-sm border-2 border-primary-dark;
+  @apply max-w-lg px-3 py-2 mx-auto text-sm border-2 border-primary-dark;
 }
 
 #app {
   @apply text-center font-ave mt-14;
+}
+
+.f-big {
+  @apply flex flex-col gap-9;
+}
+
+.f-small {
+  @apply flex flex-col gap-2;
 }
